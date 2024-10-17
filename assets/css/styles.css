@@ -31,6 +31,7 @@ body::-webkit-scrollbar {
   display: none;  /* For Chrome, Safari, Edge, Opera */
 }
 
+
 /* typography */
 
 .text-preset-1 {
@@ -225,6 +226,9 @@ body::-webkit-scrollbar {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+
+  position: relative;
+  bottom: 30px;
 }
 
 .item-1-1-2-a {
@@ -274,11 +278,13 @@ body::-webkit-scrollbar {
   height: 144px;
 }
 
+
 @media (max-width: 1124px) {
   * {
     margin: 0px;
     padding: 0px;
   }
+
   .content {
     width: 688px;
     display: flex;
@@ -365,6 +371,126 @@ body::-webkit-scrollbar {
   .item-3-a, .item-2-a {
     width: 280px;
     height: 100px;
+  }
+
+}
+
+
+@media (max-width: 688px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .content {
+    width: 343px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 20px max(0px, (100vw - 343px)/2);
+  }
+
+  .item-1 {
+    width: 343px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-2 {
+    width: 343px;
+    height: 243.5px;
+  }
+  
+  .item-3 {
+    width: 343px;
+    height: 350px;
+  }
+
+  .item-1-1 {
+    width: 343px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item-1-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 372px;
+  }
+  .item-1-4 {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+  }
+  .item-1-4-a {
+    position: relative;
+    left: 30px;
+    align-self: self-start;
+    padding: 0;
+  }
+  .item-1-4 img {
+    position: relative;
+    left: 30px;
+    align-self: self-start;
+  }
+
+  .item-1-1-1 {
+    width: 688px;
+    height: 324px;
+  }
+
+  .item-1-1-2 {
+    width: 343px;
+    justify-content: space-around;
+    height: 162px;
+  }
+
+  .item-1-1-3 {
+    width: 343px;
+    height: 218px;
+    justify-content: space-around;
+  }
+
+  .item-1-2-a {
+    width: 340px;
+    margin-top: 30px;
+  }
+  .item-1-2-c {
+    margin: 0px;
+    left: 0px;
+  }
+  .item-1-2-b {
+    width: 360px;
+    text-align: center;
+  }
+  .item-1-1-2-a {
+    left: 0;
+  }
+  .item-1-1-3-a {
+    margin: 0 0 10px 0;
+    left: 0;
+    padding-left: 10px;
+  }
+  .item-1-1-3-b {
+    left: 0;
+  }
+  .item-1-1-2-b, .item-1-1-3-a {
+    padding-top: 20px;
+    width: 343px;
+    padding-left: 10px;
+  }
+  .item-1-1-1-a {
+    width: 328px;
+    text-align: center;
+  }
+
+  .item-3-a, .item-2-a {
+    width: 340px;
+    height: 100px;
+    padding-left: 15px;
   }
 
 }
